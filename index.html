@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannah Yvonne M. Familaran | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.svg" alt="Hannah Yvonne Logo">
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="mode-toggle" class="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h3>Design. Code. Create.</h3>
+      <h1>Hey, I'm <span>Hannah Yvonne</span></h1>
+      <h4>A Student & Aspiring Designer</h4>
+      <p>
+        Exploring the art of turning ideas into digital realities.
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Hannah Yvonne">
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m <strong>Hannah Yvonne M. Familaran</strong>, a student who’s deeply interested in 
+      design, art, and technology. I enjoy exploring how creativity and logic 
+      can come together through digital projects — whether it’s web design, 
+      user interfaces, or digital art.
+    </p>
+    <p>
+      I’m currently studying at the <strong>Polytechnic University of the Philippines</strong>,
+      taking up <strong>Bachelor of Science in Information Technology</strong>. 
+      This program allows me to combine my technical knowledge with my creative interests, 
+      helping me grow as both a designer and developer.
+    </p>
+
+    <p>
+      My goal is to keep learning and improving, so I can turn my passion 
+      for art and technology into something that can make a difference. 🌷
+    </p>
+  </section>
+
+  <!-- Activities -->
+<section id="activities" class="activities text-center">
+  <h2>My Activities ✨</h2>
+  <p class="subtitle">A glimpse of my creative and academic journey 🌸</p>
+
+  <div class="activity-container">
+    <!-- Kyoto Website -->
+    <div class="activity-card">
+      <img src="hero section.jpg" alt="Kyoto Website">
+      <h3>Kyoto Website</h3>
+      <p>A peaceful, modern website that showcases the beauty and culture of Kyoto, Japan 🇯🇵</p>
+      <a href="https://hannahfamilaran.github.io/kyoto-website/" target="_blank" class="project-btn">Visit Website</a>
+    </div>
+
+    <!-- ThinkPad Website -->
+      <div class="activity-card">
+      <img src="laptop.png" alt="ThinkPad X1 Carbon">
+      <h3>ThinkPad X1 Carbon Gen 13</h3>
+      <p>A sleek and elegant showcase website highlighting the Lenovo ThinkPad X1 Carbon Gen 13 💻</p>
+      <a href="https://hannahfamilaran.github.io/thinkpad-x1-carbon-gen13/" target="_blank" class="project-btn">View Website</a>
+    </div>
+  </div>
+</section>
+
+ <!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <div class="contact-container">
+    <div class="contact-card">
+      <p>📞 <strong>Phone:</strong> +63 956 892 9965</p>
+      <p>📧 <strong>Email:</strong> familaranhannah@gmail.com</p>
+      <p>📍 <strong>Location:</strong> Batangas, Philippines</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Hannah Yvonne M. Familaran | All Rights Reserved.</p>
+  </footer>
+
+  <!-- Dark Mode -->
+  <script>
+    const toggleButton = document.getElementById('mode-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleButton.textContent = '☀️';
+    }
+  </script>
+</body>
+</html>
