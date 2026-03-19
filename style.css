@@ -342,6 +342,7 @@ body.dark-mode .activity-card .project-btn:hover {
   background-color: #ff74b8;
 }
 
+
 body.dark-mode .contact-card {
   background-color: #2a2a2a;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
@@ -356,6 +357,7 @@ body.dark-mode .contact-card strong {
   color: #ff74b8;
 }
 
+
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(40px);
@@ -365,4 +367,86 @@ body.dark-mode .contact-card strong {
 .fade-in-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 20px;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 140px 20px 60px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text h4 {
+    font-size: 16px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+  }
+
+  .about p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .activity-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity-card {
+    width: 95%;
+  }
+
+  .contact-card {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .contact-card p {
+    justify-content: center;
+  }
+
 }
