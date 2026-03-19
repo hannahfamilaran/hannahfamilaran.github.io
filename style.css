@@ -369,17 +369,17 @@ body.dark-mode .contact-card strong {
   transform: translateY(0);
 }
 
-/* =========================
-   MOBILE
-========================= */
 @media (max-width: 768px) {
 
+  /* GENERAL SECTION SPACING */
   section {
     padding: 60px 20px;
   }
 
+  /* HEADER NAV */
   header {
     padding: 12px 20px;
+    border-bottom: 1px solid #f3d6e6;
   }
 
   nav {
@@ -392,8 +392,10 @@ body.dark-mode .contact-card strong {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    display: none; /* hide menu for app style */
   }
 
+  /* HERO SECTION */
   .hero {
     flex-direction: column;
     align-items: center;
@@ -407,46 +409,63 @@ body.dark-mode .contact-card strong {
   }
 
   .hero-text h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .hero-text h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .hero-text p {
-    font-size: 14px;
+    font-size: 13px;
     max-width: 90%;
     margin: 10px auto;
   }
 
   .hero-image img {
-    width: 180px;
-    height: 180px;
-    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+    margin-top: 15px;
+  }
+
+  /* ABOUT SECTION */
+  .about {
+    background: #fff;
+    margin: 20px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   }
 
   .about p {
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 13px;
+    line-height: 1.6;
   }
 
+  /* ACTIVITIES */
   .activity-container {
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
   }
 
   .activity-card {
-    width: 95%;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .activity-card img {
+    height: 180px;
+  }
+
+  /* CONTACT SECTION */
+  .contact {
+    padding: 40px 20px;
   }
 
   .contact-card {
-    padding: 25px 20px;
+    border-radius: 20px;
+    padding: 25px;
     text-align: center;
-  }
-
-  .contact-card p {
-    justify-content: center;
   }
 
 }
